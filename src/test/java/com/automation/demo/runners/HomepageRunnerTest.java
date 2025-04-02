@@ -1,4 +1,4 @@
-package runners;
+package com.automation.demo.runners;
 
 import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
             "html:target/cucumber-reports/homepage.html",
             "json:target/cucumber-reports/homepage.json"
     },
-    glue = {"steps"}
+    glue = {"com.automation.demo.steps"}
 )
 
 public class HomepageRunnerTest extends AbstractTestNGCucumberTests {

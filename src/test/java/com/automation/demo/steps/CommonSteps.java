@@ -1,4 +1,4 @@
-package steps;
+package com.automation.demo.steps;
 
 import java.io.IOException;
 

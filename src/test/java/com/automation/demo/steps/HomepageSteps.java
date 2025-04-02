@@ -1,4 +1,4 @@
-package steps;
+package com.automation.demo.steps;
 
 import com.automation.demo.pages.TestManager;
 import com.automation.demo.pages.*;
