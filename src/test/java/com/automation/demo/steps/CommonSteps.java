@@ -34,6 +34,11 @@ public class CommonSteps {
     public void fillTextField(String text, String elementName) {
         pageManager.fillTextField(text, elementName);
     }
+    
+    @When("^I wait for the \"([^\"]*)\" element to be interactable$")
+    public void elementInteractableWait(String elementName) {
+        pageManager.elementInteractableWait(elementName);
+    }
 
     @When("^I click on the \"([^\"]*)\" element$")
     public void clickOnElement(String elementName) {

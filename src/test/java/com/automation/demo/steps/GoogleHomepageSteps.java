@@ -4,17 +4,19 @@ import com.automation.demo.managers.*;
 
 import io.cucumber.java.en.*;
 
-public class HomepageSteps {
+public class GoogleHomepageSteps {
     
     public PageManager pageManager;
 
     TestManager testManager;
 
-    public HomepageSteps(TestManager context) {
+    public GoogleHomepageSteps(TestManager context) {
         testManager = context;
         pageManager = testManager.getPageManager();
     }
 
     @Then("I should see google search results")
-    public void checkGoogleSearchResults() {}
+    public void checkGoogleSearchResults() {
+        pageManager.checkGoogleSearchResults();
+    }
 }

@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
     glue = {"com.automation.demo.steps"}
 )
 
-public class HomepageRunnerTest extends AbstractTestNGCucumberTests {
+public class CucumberRunnerTest extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {
