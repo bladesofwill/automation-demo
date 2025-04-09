@@ -2,11 +2,11 @@ package com.automation.demo.steps;
 
 import java.io.IOException;
 
-import com.automation.demo.pages.*;
-
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
+
+import com.automation.demo.managers.*;
 
 public class CommonSteps {
     
@@ -31,8 +31,12 @@ public class CommonSteps {
     }
 
     @When("^I enter the text \"([^\"]*)\" in the \"([^\"]*)\" text field$")
-    public void fillTextField(String text, String elementName) {}
+    public void fillTextField(String text, String elementName) {
+        pageManager.fillTextField(text, elementName);
+    }
 
     @When("^I click on the \"([^\"]*)\" element$")
-    public void clickOnElement(String elementName) {}
+    public void clickOnElement(String elementName) {
+        pageManager.clickOnElement(elementName);
+    }
 }

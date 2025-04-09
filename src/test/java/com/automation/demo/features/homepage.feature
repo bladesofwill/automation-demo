@@ -8,5 +8,5 @@ Feature: Google Homepage Tests
     @homepage-search
     Scenario: Verify that I see search results in Google
         When I enter the text "selenium" in the "search" text field
-        And I click on the "google search" element
+        And I click on the "google search button" element
         Then I should see google search results

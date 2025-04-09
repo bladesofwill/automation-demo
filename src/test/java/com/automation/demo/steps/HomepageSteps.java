@@ -1,7 +1,7 @@
 package com.automation.demo.steps;
 
-import com.automation.demo.pages.TestManager;
-import com.automation.demo.pages.*;
+import com.automation.demo.managers.*;
+
 import io.cucumber.java.en.*;
 
 public class HomepageSteps {

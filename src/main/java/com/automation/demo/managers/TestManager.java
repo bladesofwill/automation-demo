@@ -1,4 +1,4 @@
-package com.automation.demo.pages;
+package com.automation.demo.managers;
 
 public class TestManager {
     
