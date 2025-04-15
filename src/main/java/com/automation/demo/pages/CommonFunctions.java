@@ -15,30 +15,29 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CommonFunctions {
 
     // clicks on a specified element
-    public void clickElement(WebElement targetElement) {
+    public static void clickElement(WebElement targetElement) {
         targetElement.click();
     }
 
     // clicks on a specified element using javascript when element.click() does not work
-    public void jsClickElement(WebDriver driver, WebElement targetElement) {
+    public static void jsClickElement(WebDriver driver, WebElement targetElement) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", targetElement);
     }
 
     // sets values in fields
-    public void setElementField(WebElement targetElement, String value) {
+    public static void setElementField(WebElement targetElement, String value) {
         targetElement.clear();
         targetElement.sendKeys(value);
     }
 
-    public void checkElementVisibility(WebDriver driver, By elementLocator) {
+    public static void checkElementVisibility(WebDriver driver, By elementLocator) {
         Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(elementLocator));
     }
 
-    public void elementInteractableWait(WebDriver driver, By elementLocator) {
+    public static void elementInteractableWait(WebDriver driver, By elementLocator) {
         Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.elementToBeClickable(elementLocator));
     }
 
-    
 }
